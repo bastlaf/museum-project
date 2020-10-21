@@ -1,0 +1,450 @@
+* {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+/* Block Bouton */
+.btn {
+  text-decoration: none;
+  background-color: gainsboro;
+  color: black;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 9px 5px;
+}
+/* Element  btn*/
+.btn__text {
+  padding: 0 10px;
+  border-radius: 0 5px 5px 0;
+  font-family: "Muli ExtraLight", sans-serif;
+}
+/* Modifier taille */
+.btn--big {
+  font-size: 0.7rem;
+  padding: 10px 25px 10px 25px;
+}
+/* Modifier  couleur btn*/
+.btn--orange {
+  border-color: #d99578;
+  color: white;
+  background-color: #d99578;
+}
+/* Modifier */
+.btn--brown {
+  border-color: #393738;
+  color: white;
+  background-color: #393738;
+}
+.bande {
+  background-image: url("../images/inner-banner-bg-1-1.jpg");
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bande__titre1 {
+  font-family: "muli";
+  color: white;
+  padding: 0 100px 20px 100px;
+  border-bottom: solid 1px white;
+}
+.bande__Menubottom {
+  display: flex;
+  width: 290px;
+  padding: 20px 50px;
+  color: white;
+}
+.bande__month {
+  border-right: solid 1px white;
+  padding-right: 20px;
+}
+.bande__date {
+  padding-left: 20px;
+}
+.bande__month:hover {
+  color: rgb(0, 0, 0);
+}
+.bande__date:hover {
+  color: rgb(0, 0, 0);
+}
+
+.click {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+.click--select {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border: lightgrey 1px solid;
+  border-radius: 3px;
+  box-shadow: 0px 0px 86px -15px rgba(0, 0, 0, 0.75);
+  margin-top: -20px;
+}
+
+.click--select_box {
+  /*arrow none*/
+
+  background-color: white;
+  padding-left: 4px;
+  border: 0.5px;
+  align-items: center;
+  height: 40px;
+  width: 150px;
+  border: 0.5px solid white;
+
+  font-family: arial;
+  font-weight: 100;
+  color: gray;
+  font-size: 1.1em;
+
+  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
+    no-repeat right white;
+  background-size: 6px;
+  background-position-x: 12em;
+
+  border-style: none solid none none;
+  border-color: #e4e4e4;
+}
+
+.click--select_box_text {
+  background-color: white;
+  padding-left: 4px;
+}
+
+.click--select_button {
+  position: relative;
+  background-color: #302e2f;
+  color: white;
+  border: 0.5px solid #302e2f;
+  border-radius: 3px;
+}
+
+.contenu__boxBouton {
+  display: none;
+  align-items: flex-end;
+  width: 100%;
+  height: 50px;
+}
+.contenu__boxBoutonOk {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 50px;
+}
+.contenu__boutonOk {
+  display: flex;
+  background-color: #d99578;
+  border: solid 1px rgb(250, 250, 250);
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+  width: 90%;
+  font-family: "muli";
+}
+.contenu__bouton {
+  display: none;
+  background-color: #d99578;
+  border: solid 1px rgb(250, 250, 250);
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+  width: 90%;
+  font-family: "muli";
+}
+
+.contenu {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contenu__flexprincipal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+}
+
+.contenu__titre1 {
+  font-family: "prata";
+  font-size: 15px;
+  color: #302e2f;
+}
+.contenu__titre2 {
+  font-family: "prata";
+  font-size: 13px;
+  color: #302e2f;
+}
+.contenu__textcase {
+  font-family: "muli";
+  font-size: 15px;
+  color: #838383;
+}
+
+.contenu__boximage1 {
+  background-image: url("../images/event-4-1.jpg");
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 47%;
+  height: 400px;
+  margin-bottom: 40px;
+}
+.contenu__boxtext1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  padding-top: 20px;
+  width: 60%;
+  height: 60%;
+}
+
+.contenu__boximage2 {
+  background-image: url("../images/event-4-2.jpg");
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 47%;
+  height: 400px;
+  margin-bottom: 40px;
+}
+.contenu__boxtext2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  padding-top: 20px;
+  width: 60%;
+  height: 60%;
+}
+
+.contenu__boximage3 {
+  background-image: url("../images/event-4-3.jpg");
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 47%;
+  height: 400px;
+  margin-bottom: 40px;
+}
+.contenu__boxtext3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  padding-top: 20px;
+  width: 60%;
+  height: 60%;
+}
+
+.contenu__boximage4 {
+  background-image: url("../images/event-4-4.jpg");
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 47%;
+  height: 400px;
+  margin-bottom: 40px;
+}
+.contenu__boxtext4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  padding-top: 20px;
+  width: 60%;
+  height: 60%;
+}
+
+.contenu__boximage5 {
+  background-image: url("../images/event-4-5.jpg");
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 47%;
+  height: 400px;
+  margin-bottom: 40px;
+}
+.contenu__boxtext5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  padding-top: 20px;
+  width: 60%;
+  height: 60%;
+}
+
+.contenu__boximage6 {
+  background-image: url("../images/event-4-6.jpg");
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 47%;
+  height: 400px;
+  margin-bottom: 40px;
+}
+.contenu__boxtext6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  padding-top: 20px;
+  width: 60%;
+  height: 60%;
+}
+
+.selectionpage {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 100px;
+}
+.selectionpage__boxbouton {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: solid 1px #b4b4b4;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 40px;
+  margin: 20px 20px;
+  border-radius: 5px;
+  color: white;
+  transition: 0.2s;
+  font-family: "muli";
+  color: rgb(51, 51, 51);
+}
+.selectionpage__bouton {
+  font-family: "Prata";
+  font-style: normal;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+.selectionpage__boxbouton:hover {
+  background-color: #d99578;
+}
+
+/* blog Media Queries talette */
+@media screen and (max-width: 768px) {
+  .contenu__flexprincipal {
+    justify-content: center;
+  }
+
+  .contenu__boximage1 {
+    width: 90%;
+    margin-bottom: 300px;
+  }
+
+  .contenu__boxtext1 {
+    width: 100%;
+    position: relative;
+    top: 240px;
+  }
+  .contenu__boximage2 {
+    width: 90%;
+    margin-bottom: 300px;
+  }
+
+  .contenu__boxtext2 {
+    width: 100%;
+    position: relative;
+    top: 240px;
+  }
+  .contenu__boximage3 {
+    width: 90%;
+    margin-bottom: 300px;
+  }
+
+  .contenu__boxtext3 {
+    width: 100%;
+    position: relative;
+    top: 240px;
+  }
+  .contenu__boximage4 {
+    width: 90%;
+    margin-bottom: 300px;
+  }
+
+  .contenu__boxtext4 {
+    width: 100%;
+    position: relative;
+    top: 240px;
+  }
+  .contenu__boximage5 {
+    width: 90%;
+    margin-bottom: 300px;
+  }
+
+  .contenu__boxtext5 {
+    width: 100%;
+    position: relative;
+    top: 240px;
+  }
+  .contenu__boximage6 {
+    width: 90%;
+    margin-bottom: 300px;
+  }
+
+  .contenu__boxtext6 {
+    width: 100%;
+    position: relative;
+    top: 240px;
+  }
+  .contenu__boxBouton {
+    display: flex;
+  }
+  .contenu__bouton {
+    display: flex;
+  }
+}
+
+/* compteur Media Queries téléphone */
+@media screen and (max-width: 414px) {
+  .click {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .click--select {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .click--select_box {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .click--select_box_text {
+    text-align: center;
+  }
+  .click--select_button {
+    width: 100%;
+    height: 30px;
+  }
+  .bande__titre1 {
+    font-size: 25px;
+  }
+}

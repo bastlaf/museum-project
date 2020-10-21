@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musem of Egypt</title>
+    <link rel="stylesheet" href="css/event.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="css/event-details.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/hlq7lwy.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+          } else {
+            $(".item").addClass("active");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="contenair-header">
+        <!-- Rachida Menu hamburger et réseaux. -->
+        <div class="line-one">
+          <span class="visit">
+            <i class="far fa-clock link-orange"></i
+            ><a class="text-header"
+              >Plan Your Visit Today: 9 00
+              <svg
+                version="1.1"
+                id="line_2"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="30px"
+                height="5px"
+                xml:space="preserve"
+              >
+                <path
+                  class="path2"
+                  fill="#d99578"
+                  stroke-width="3"
+                  stroke="#d99578"
+                  d="M0 0 l1120 0"
+                />
+              </svg>
+              7 30</a
+            >
+
+            <i class="far fa-map link-orange"> </i
+            ><a class="text-header">Get Direction</a></span
+          >
+
+          <div class="social-media">
+            <i class="fab fa-facebook-f link-brown-light"></i>
+            <i class="fab fa-twitter link-brown-light"></i>
+            <i class="fab fa-instagram link-brown-light"></i>
+            <i class="fab fa-youtube link-brown-light"></i>
+            <div class="search">
+              <input
+                class="search-txt"
+                type="text"
+                name="search"
+                placeholder="Type to search"
+              />
+              <a class="search-btn" href="#">
+                <i class="fas fa-search search-i link-brown-ligh"></i>
+              </a>
+            </div>
+            <form>
+              <select class="search" name="lang" size="1">
+                <option>En</option>
+                <option>Fr</option>
+              </select>
+            </form>
+            <a href="#" class="btn btn--orange">
+              <span class="btn__text">Tickets</span>
+            </a>
+          </div>
+        </div>
+        <div class="line-two">
+          <span class="logo">
+            <a class="nav" href="#"
+              ><img src="images/light-logo.png" alt="logo"
+            /></a>
+          </span>
+          <nav>
+            <ul class="menu">
+              <li class="item"><a class="nav" href="index.html">Home</a></li>
+              <li class="item">
+                <a class="nav" href="about.html">The museum</a>
+              </li>
+              <li class="item"><a class="nav" href="contact.html">visit</a></li>
+              <li class="item">
+                <a class="nav" href="events.html">What's on</a>
+              </li>
+              <li class="item">
+                <a class="nav" href="index.html">Collection</a>
+              </li>
+              <li class="item"><a class="nav" href="index.html">Page</a></li>
+
+              <li class="item"><i class="fas fa-shopping-cart nav"></i></li>
+              <li class="toggle"><span class="bars"></span></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="events--details">
+      <div class="details--texte1">Independent Japanese Antiquity</div>
+      <div class="details--single">Home:Event:<b>Single event</b></div>
+    </div>
+
+    <div class="details__menu">
+      <div class="menu1">About Event</div>
+      <div class="menu2">Schedule</div>
+      <div class="menu3">Gallery</div>
+      <div class="menu4">Contact</div>
+    </div>
+    <div class="details__box">
+      <img class="box__droite" src="images/event-d-1-1.jpg" alt="" />
+      <div class="details__text">
+        <div class="text__row1">
+          <div class="row__text1">Date & Time</div>
+          <div class="row__date1">
+            <img class="text__horloge" src="images/horloge.svg" alt="#" />04 Nov
+            2019, 10.00 to 15.00
+          </div>
+        </div>
+        <div class="text__row2">
+          <div class="row__text2">Location</div>
+          <div class="row__lieux">
+            <img class="text__nav" src="images/navigation1.svg" alt="#" />246
+            King Street NY 10011
+          </div>
+        </div>
+        <div class="text__row3">
+          <div class="row__text3">Organizer</div>
+          <div class="row__orga">
+            <img
+              class="text__orga"
+              src="images/organisation.svg"
+              alt="#"
+            />Egypt Historical Museum
+          </div>
+        </div>
+        <div class="text__row4">
+          <div class="row__text4">Ticket Cost</div>
+          <div class="row__ticket">
+            <img class="text__ticket" src="images/ticket.svg" alt="#" />Adult -
+            $15/childrens - $10
+          </div>
+        </div>
+        <div class="text__row5">
+          <div class="row__text5">*Free for Museum Members.</div>
+        </div>
+      </div>
+    </div>
+    <div class="submitbox">
+      <form method="post" action="#" onSubmit="">
+      
+        <div class="submit__text1">Online Booking</div>
+        <div class="submit__text2">
+          <input
+            type="text"
+            id="Name"
+            name="Name-book"
+            style="width: 240px; height: 40px"
+            class="form-booking"
+            placeholder="Your Name"
+          />
+        </div>
+        <div class="submit__email">
+          <input
+            type="text"
+            id="email-book"
+            name="email-book"
+            style="width: 240px; height: 40px"
+            class="form-booking"
+            placeholder="Email Adress"
+          />
+        </div>
+        <div class="Nchildren">
+          Number of children
+          <input
+            type="number"
+            id="child-numb"
+            name="child-numb"
+            min="0"
+            max="20"
+            style="width: 100px; height: 40px"
+            class="form-booking"
+          />
+        </div>
+        <div class="box__desc">
+          <textarea
+            id="Desc"
+            false
+            name="Desc"
+            style="width: 240px; height: 100px"
+            rows="4"
+            class="form-booking"
+            placeholder="Description"
+          ></textarea>
+        </div>
+        <div class="btn__submit">
+          <input
+            id="skip_Submit"
+            value="Proceed to Book"
+            style="width: 240px; height: 30px"
+            type="submit"
+          />
+        </div>
+        <div></div>
+      </form>
+    </div>
+    <div class="wrapper-details">
+    <div class="details__about">
+      <div class="details__titre">Detail About Event</div>
+      <p class="details__text1">
+        Equal blame belongs to those who fail in their duty through weakness of
+        will, which is the same as saying through shrinking from toil and pain.
+      </p>
+      <p class="details__text2">
+        These cases are perfectly simple and easy to distinguish. In a free
+        hour, when our power of choice is untrammelled and when nothung every
+        pleasure is to be welcomed and every pain avoided. But in certain
+        circumstances and owing to the claims of duty or the obligations of
+        business.
+      </p>
+    </div>
+    <div class="details__schedule">
+      <div class="details__time">
+        <div class="schedule__titre">Event Schedule</div>
+        <div class="time__block1">
+          <div class="details__time1">10am - 12pm</div>
+          <div class="time1__text1">
+            Introduction of independent Japanese antiquity
+            <p class="time1__text1-1">Enjoy a 2 hours express Highlights</p>
+          </div>
+        </div>
+        <div class="time__block2">
+          <div class="details__time2">1pm - 4pm</div>
+          <div class="time2__text2">
+            A curated selection of Japanese antiques
+            <p class="time2__text2-2">
+              This program will take place in classroom B
+            </p>
+          </div>
+        </div>
+        <div class="time_block3">
+          <div class="details__time3">4.30pm - 6pm</div>
+          <div class="time3__text3">
+            Know Antiques roadshox appraiser from exper
+            <p class="time3__text3-3">
+              Owing to the claims of duty or the obligations
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="details__gallery">
+      <div class="gallery__titre">Gallery</div>
+      <div class="gallery__main">
+        <img class="gallery__image1" src="images/event-d-g-1.jpg" alt="#" />
+        <img class="gallery__image2" src="images/event-d-g-2.jpg" alt="#" />
+        <img class="gallery__image3" src="images/event-d-g-3.jpg" alt="#" />
+        <img class="gallery__image4" src="images/event-d-g-4.jpg" alt="#" />
+      </div>
+    </div>
+
+    <div class="info__plan">
+      <div class="contact__info">
+        <div class="info__titre">Contact Information</div>
+        <p class="info__text1">
+          Do you have any query about this event pls contact our team.
+        </p>
+        <p class="info__adress">Adress:</p>
+        <p class="info__text2">
+          61 Wellfiel Road roath, 2nd Str, Cardiff CF24002 3DG
+        </p>
+        <p class="info__phone">Phone</p>
+        <p class="info__text3">321 (888) 789-0123 & 4567</p>
+        <p class="info__mail">Email</p>
+        <p class="info__text4">egyptmuseumevent@example.com</p>
+      </div>
+      <div class="iframe">
+        <iframe
+          class="iframe01"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9929.738503670162!2d-0.1330008!3d51.5235877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x15cc1ba6179709db!2sMus%C3%A9e%20Petrie%20d&#39;arch%C3%A9ologie%20%C3%A9gyptienne!5e0!3m2!1sfr!2sbe!4v1602789201249!5m2!1sfr!2sbe"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+    <footer>
+      <!-- Rachida -->
+      <div class="footer-wrap">
+        <div>
+          <img src="images/footer-logo-1-1.png" alt="logo" />
+          <form
+            class="form-footer"
+            action="#"
+            method="post"
+            autocomplete="on"
+            name="sign up for beta form"
+          >
+            <div class="input">
+              <input
+                type="email"
+                class="button"
+                id="email"
+                name="email"
+                pattern="[^@]+@[^\.]+\..+"
+                placeholder=" Enter Email Address..."
+                required
+              />
+              <span class="fontawesome-envelope"
+                ><i class="far fa-envelope-open fa-lg"></i
+              ></span>
+              <button type="submit" class="button" id="submit">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </form></div>
+        </div>
+      </div>
+      <div class="social-media-footer">
+        <i class="fab fa-facebook-f link-social"></i>
+        <i class="fab fa-twitter link-social"></i>
+        <i class="fab fa-instagram link-social"></i>
+        <i class="fab fa-youtube link-social"></i>
+      </div>
+      <span class="text-footer"
+        >Copyrights © 2019 <span class="link-orange">Egypt</span>, All Rights
+        Reserved</span
+      >
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,284 @@
+header {
+  background-color: #302e2f;
+  width: 100vw;
+  max-width: 100%;
+}
+h2 {
+  font-family: "Prata", sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+  color: #302e2f;
+}
+h3 {
+  text-transform: uppercase;
+  color: #999;
+  font-size: smaller;
+}
+body {
+  font-family: "Muli Regular", sans-serif;
+}
+.link-orange {
+  color: rgb(217, 149, 120);
+}
+.link-brown-light {
+  color: #847a7d;
+  cursor: pointer;
+}
+.link-brown-light:hover {
+  color: #d99578;
+  cursor: pointer;
+}
+.contenair-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.line-one {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  border-bottom: 1px solid rgba(132, 122, 125, 0.3);
+  margin-bottom: 10px;
+  width: 80%;
+  justify-content: space-between;
+}
+.line-two {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 20px;
+}
+.visit {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fab {
+  padding-right: 10px;
+}
+.text-header {
+  color: #847a7d;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.9rem;
+}
+/* Search */
+.search {
+  display: inline-block;
+  border-radius: 5px;
+  background: #302e2f;
+  height: 40px;
+  color: #847a7d;
+  padding-right: 5px;
+}
+
+.search:hover > .search-txt {
+  width: 180px;
+  padding: 0 10px;
+  color: wheat;
+  font-family: "Muli ExtraLight", sans-serif;
+}
+.search:hover > .search-btn {
+  background: white;
+}
+.search-btn {
+  color: #847a7d;
+  float: right;
+  width: 45px;
+  height: 40px;
+  background: #302e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #847a7d;
+  border-radius: 5px;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: wheat;
+  font-size: 1rem;
+  transition: ease-in 0.4s;
+  line-height: 40px;
+  width: 0px;
+  font-family: "Muli ExtraLight", sans-serif;
+}
+
+/* Nav*/
+nav {
+  background: #302e2f;
+  padding: 5px 20px;
+  font-family: "Muli Regular", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+.nav {
+  color: white;
+  text-decoration: none;
+}
+.nav:hover {
+  text-decoration: none;
+  color: #d99578;
+}
+.logo a:hover {
+  text-decoration: none;
+}
+.menu li {
+  font-size: 1rem;
+  padding: 15px 5px;
+  /* 15px top 5px left and right*/
+  white-space: nowrap;
+}
+.menu li a {
+  display: block;
+}
+.logo a,
+.toggle a {
+  font-size: 1.2rem;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* axe vertical */
+  align-items: center; /* align cross axe horizontal */
+}
+.toggle {
+  order: 1;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active {
+  display: block;
+}
+
+/* Navbar Toggle */
+.toggle {
+  cursor: pointer;
+}
+.bars {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+.bars:before,
+.bars:after {
+  background: #999;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.bars:before {
+  top: 5px;
+}
+.bars:after {
+  top: -5px;
+}
+.bars:hover {
+  background: #d99578;
+  transition: background 0.2s ease-out;
+}
+.bars:hover::before {
+  background: #d99578;
+  transition: background 0.2s ease-out;
+}
+.bars:hover::after {
+  background: #d99578;
+  transition: background 0.2s ease-out;
+}
+/* Tablet menu */
+@media all and (min-width: 468px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle {
+    order: 2;
+  }
+  .button.secondary {
+    border: 0;
+  }
+  .button a {
+    padding: 7.5px 15px;
+    background: #d99578;
+    border: 1px #d99578;
+    border-radius: 50em;
+  }
+  .button.secondary a {
+    background: transparent;
+  }
+  .button a:hover {
+    text-decoration: none;
+    transition: all 0.25s;
+  }
+  .button:not(.secondary) a:hover {
+    background: #d99578;
+    border-color: #d99578;
+  }
+  .button.secondary a:hover {
+    color: #ddd;
+  }
+}
+
+/* Desktop menu */
+@media all and (min-width: 768px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+  }
+  .button {
+    order: 2;
+  }
+  .menu li {
+    padding: 15px 10px;
+  }
+  .menu li.button {
+    padding-right: 0;
+  }
+}

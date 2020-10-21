@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musem of Egypt</title>
+    <link rel="stylesheet" href="css/event.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/hlq7lwy.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+          } else {
+            $(".item").addClass("active");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="contenair-header">
+        <!-- Rachida Menu hamburger et réseaux. -->
+        <div class="line-one">
+          <span class="visit">
+            <i class="far fa-clock link-orange"></i
+            ><a class="text-header"
+              >Plan Your Visit Today: 9 00
+              <svg
+                version="1.1"
+                id="line_2"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="30px"
+                height="5px"
+                xml:space="preserve"
+              >
+                <path
+                  class="path2"
+                  fill="#d99578"
+                  stroke-width="3"
+                  stroke="#d99578"
+                  d="M0 0 l1120 0"
+                />
+              </svg>
+              7 30</a
+            >
+
+            <i class="far fa-map link-orange"> </i
+            ><a class="text-header">Get Direction</a></span
+          >
+
+          <div class="social-media">
+            <i class="fab fa-facebook-f link-brown-light"></i>
+            <i class="fab fa-twitter link-brown-light"></i>
+            <i class="fab fa-instagram link-brown-light"></i>
+            <i class="fab fa-youtube link-brown-light"></i>
+            <div class="search">
+              <input
+                class="search-txt"
+                type="text"
+                name="search"
+                placeholder="Type to search"
+              />
+              <a class="search-btn" href="#">
+                <i class="fas fa-search search-i link-brown-ligh"></i>
+              </a>
+            </div>
+            <form>
+              <select class="search" name="lang" size="1">
+                <option>En</option>
+                <option>Fr</option>
+              </select>
+            </form>
+            <a href="#" class="btn btn--orange">
+              <span class="btn__text">Tickets</span>
+            </a>
+          </div>
+        </div>
+        <div class="line-two">
+          <span class="logo">
+            <a class="nav" href="#"
+              ><img src="images/light-logo.png" alt="logo"
+            /></a>
+          </span>
+          <nav>
+            <ul class="menu">
+              <li class="item"><a class="nav" href="index.html">Home</a></li>
+              <li class="item">
+                <a class="nav" href="about.html">The museum</a>
+              </li>
+              <li class="item"><a class="nav" href="contact.html">visit</a></li>
+              <li class="item">
+                <a class="nav" href="events.html">What's on</a>
+              </li>
+              <li class="item">
+                <a class="nav" href="index.html">Collection</a>
+              </li>
+              <li class="item"><a class="nav" href="index.html">Page</a></li>
+
+              <li class="item"><i class="fas fa-shopping-cart nav"></i></li>
+              <li class="toggle"><span class="bars"></span></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="bande">
+      <h2 class="bande__titre1">November-2019</h2>
+      <div class="bande__Menubottom">
+        <p class="bande__month">Search by month</p>
+        <p class="bande__date">Search by date</p>
+      </div>
+    </section>
+
+    <div class="click">
+      <!--NAV-->
+      <div class="click--select">
+        <select
+          class="click--select_box"
+          name="Categories"
+          id="Categories-select"
+        >
+          <option class="click--select_box_text" value="">
+            <p class="txtbout">All Categories</p>
+          </option>
+          <option class="click--select_box_text" value="Allevent">
+            All Event
+          </option>
+          <option class="click--select_box_text" value="Allevent">
+            All Event
+          </option>
+          <option class="click--select_box_text" value="Allevent">
+            All Event
+          </option>
+          <option class="click--select_box_text" value="Allevent">
+            All Event
+          </option>
+        </select>
+
+        <select class="click--select_box" name="Location" id="locations-select">
+          <option class="click--select_box_text" value="">
+            <p class="txtbout">All Location</p>
+          </option>
+          <option class="click--select_box_text" value="Alllocation">
+            All Location
+          </option>
+          <option class="click--select_box_text" value="Alllocation">
+            All Location
+          </option>
+          <option class="click--select_box_text" value="Alllocation">
+            All Location
+          </option>
+          <option class="click--select_box_text" value="Alllocation">
+            All Location
+          </option>
+        </select>
+
+        <select class="click--select_box" name="Event" id="Event-select">
+          <option class="click--select_box_text" value="">
+            <p class="txtbout">All Event</p>
+          </option>
+          <option class="click--select_box_text" value="ALLevent">
+            All Event
+          </option>
+          <option class="click--select_box_text" value="ALLevent">
+            All Event
+          </option>
+          <option class="click--select_box_text" value="ALLevent">
+            All Event
+          </option>
+        </select>
+
+        <button class="click--select_button">FIND EVENT</button>
+      </div>
+    </div>
+
+    <div class="contenu">
+      <div class="contenu__flexprincipal">
+        <div class="contenu__boximage1">
+          <div class="contenu__boxtext1">
+            <h4 class="contenu__titre1">
+              Weekend Drop-In Sessions In The Slacker Lab
+            </h4>
+            <h4 class="contenu__titre2">Date & Time</h4>
+            <p class="contenu__textcase">04 Nov, 2019, 10.00 to 15.00</p>
+            <p class="contenu__textcase">_____________</p>
+            <h4 class="contenu__titre2">Location</h4>
+            <p class="contenu__textcase">246, King street, NY city</p>
+            <div class="contenu__boxBouton">
+              <a class="contenu__bouton" href="#">more details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenu__boximage2">
+          <div class="contenu__boxtext2">
+            <h4 class="contenu__titre1">
+              Weekend Drop-In Sessions In The Slacker Lab
+            </h4>
+            <h4 class="contenu__titre2">Date & Time</h4>
+            <p class="contenu__textcase">04 Nov, 2019, 10.00 to 15.00</p>
+            <p class="contenu__textcase">_____________</p>
+            <h4 class="contenu__titre2">Location</h4>
+            <p class="contenu__textcase">246, King street, NY city</p>
+            <div class="contenu__boxBouton">
+              <a class="contenu__bouton" href="#">more details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenu__boximage3">
+          <div class="contenu__boxtext3">
+            <h4 class="contenu__titre1">
+              Weekend Drop-In Sessions In The Slacker Lab
+            </h4>
+            <h4 class="contenu__titre2">Date & Time</h4>
+            <p class="contenu__textcase">04 Nov, 2019, 10.00 to 15.00</p>
+            <p class="contenu__textcase">_____________</p>
+            <h4 class="contenu__titre2">Location</h4>
+            <p class="contenu__textcase">246, King street, NY city</p>
+            <div class="contenu__boxBouton">
+              <a class="contenu__bouton" href="#">more details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenu__boximage4">
+          <div class="contenu__boxtext4">
+            <h4 class="contenu__titre1">
+              Weekend Drop-In Sessions In The Slacker Lab
+            </h4>
+            <h4 class="contenu__titre2">Date & Time</h4>
+            <p class="contenu__textcase">04 Nov, 2019, 10.00 to 15.00</p>
+            <p class="contenu__textcase">_____________</p>
+            <h4 class="contenu__titre2">Location</h4>
+            <p class="contenu__textcase">246, King street, NY city</p>
+            <div class="contenu__boxBoutonOk">
+              <a class="contenu__boutonOk" href="#">more details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenu__boximage5">
+          <div class="contenu__boxtext5">
+            <h4 class="contenu__titre1">
+              Weekend Drop-In Sessions In The Slacker Lab
+            </h4>
+            <h4 class="contenu__titre2">Date & Time</h4>
+            <p class="contenu__textcase">04 Nov, 2019, 10.00 to 15.00</p>
+            <p class="contenu__textcase">_____________</p>
+            <h4 class="contenu__titre2">Location</h4>
+            <p class="contenu__textcase">246, King street, NY city</p>
+            <div class="contenu__boxBouton">
+              <a class="contenu__bouton" href="#">more details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenu__boximage6">
+          <div class="contenu__boxtext6">
+            <h4 class="contenu__titre1">
+              Weekend Drop-In Sessions In The Slacker Lab
+            </h4>
+            <h4 class="contenu__titre2">Date & Time</h4>
+            <p class="contenu__textcase">04 Nov, 2019, 10.00 to 15.00</p>
+            <p class="contenu__textcase">_____________</p>
+            <h4 class="contenu__titre2">Location</h4>
+            <p class="contenu__textcase">246, King street, NY city</p>
+            <div class="contenu__boxBouton">
+              <a class="contenu__bouton" href="#">more details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="selectionpage">
+      <div class="selectionpage__boxbouton">
+        <a class="selectionpage__bouton" href="event-details.html">prev</a>
+      </div>
+
+      <div class="selectionpage__boxbouton">
+        <a class="selectionpage__bouton" href="event-details.html">1</a>
+      </div>
+
+      <div class="selectionpage__boxbouton">
+        <a class="selectionpage__bouton" href="event-details.html">2</a>
+      </div>
+
+      <div class="selectionpage__boxbouton">
+        <a class="selectionpage__bouton" href="event-details.html">next</a>
+      </div>
+    </div>
+
+    <footer>
+      <!-- Rachida -->
+      <div class="footer-wrap">
+        <div>
+          <img src="images/footer-logo-1-1.png" alt="logo" />
+          <form
+            class="form-footer"
+            action="#"
+            method="post"
+            autocomplete="on"
+            name="sign up for beta form"
+          >
+            <div class="input">
+              <input
+                type="email"
+                class="button"
+                id="email"
+                name="email"
+                pattern="[^@]+@[^\.]+\..+"
+                placeholder=" Enter Email Address..."
+                required
+              />
+              <span class="fontawesome-envelope"
+                ><i class="far fa-envelope-open fa-lg"></i
+              ></span>
+              <button type="submit" class="button" id="submit">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="social-media-footer">
+        <i class="fab fa-facebook-f link-social"></i>
+        <i class="fab fa-twitter link-social"></i>
+        <i class="fab fa-instagram link-social"></i>
+        <i class="fab fa-youtube link-social"></i>
+      </div>
+      <span class="text-footer"
+        >Copyrights © 2019 <span class="link-orange">Egypt</span>, All Rights
+        Reserved</span
+      >
+    </footer>
+  </body>
+</html>

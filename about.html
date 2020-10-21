@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museum of Egypt</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/about.css" />
+
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+          } else {
+            $(".item").addClass("active");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+      <header id="top">
+        <div class="contenair-header">
+          <!-- Rachida Menu hamburger et réseaux. -->
+          <div class="line-one">
+            <span class="visit">
+              <i class="far fa-clock link-orange"></i
+              ><a class="text-header"
+                >Plan Your Visit Today: 9 00
+                <svg
+                  version="1.1"
+                  id="line_2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="30px"
+                  height="5px"
+                  xml:space="preserve"
+                >
+                  <path
+                    class="path2"
+                    fill="#d99578"
+                    stroke-width="3"
+                    stroke="#d99578"
+                    d="M0 0 l1120 0"
+                  />
+                </svg>
+                7 30</a
+              >
+
+              <i class="far fa-map link-orange"> </i
+              ><a class="text-header">Get Direction</a></span
+            >
+
+            <div class="social-media">
+              <i class="fab fa-facebook-f link-brown-light"></i>
+              <i class="fab fa-twitter link-brown-light"></i>
+              <i class="fab fa-instagram link-brown-light"></i>
+              <i class="fab fa-youtube link-brown-light"></i>
+              <div class="search">
+                <input
+                  class="search-txt"
+                  type="text"
+                  name="search"
+                  placeholder="Type to search"
+                />
+                <a class="search-btn" href="#">
+                  <i class="fas fa-search search-i link-brown-ligh"></i>
+                </a>
+              </div>
+              <form>
+                <select class="search" name="lang" size="1">
+                  <option>En</option>
+                  <option>Fr</option>
+                </select>
+              </form>
+              <a href="#" class="btn btn--orange">
+                <span class="btn__text">Tickets</span>
+              </a>
+            </div>
+          </div>
+          <div class="line-two">
+            <span class="logo">
+              <a class="nav" href="#"
+                ><img src="images/light-logo.png" alt="logo"
+              /></a>
+            </span>
+            <nav>
+              <ul class="menu">
+                <li class="item"><a class="nav" href="index.html">Home</a></li>
+                <li class="item">
+                  <a class="nav" href="about.html">The museum</a>
+                </li>
+                <li class="item">
+                  <a class="nav" href="contact.html">visit</a>
+                </li>
+                <li class="item">
+                  <a class="nav" href="events.html">What's on</a>
+                </li>
+                <li class="item">
+                  <a class="nav" href="index.html">Collection</a>
+                </li>
+                <li class="item"><a class="nav" href="index.html">Page</a></li>
+
+                <li class="item"><i class="fas fa-shopping-cart nav"></i></li>
+                <li class="toggle"><span class="bars"></span></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- back-head-->
+      <section class="back-head">
+        <div class="back-head__title">
+          <h2 class="titreh2--big titreh2 titreh2--white">About Our Museum</h2>
+        </div>
+      </section>
+      <div class="titre-about">
+        <div class="history--about history--titre">ABOUT US</div>
+      </div>
+      <div class="titre-about">
+        <div class="titreh2 titreh2--big titreh2--black">
+          The World's Leading Museum of History <br />Over 2.3k Collection
+        </div>
+      </div>
+      <!-- grid 2 sections -->
+      <div class="wrapper">
+        <div class="company-info">
+          <h2 class="titreh2 space-bottom">Established in 1969</h2>
+          <p class="paragraphetext paragraphetext--gris">
+            Egypt is the world leading museum of history & culture, housing a
+            permanent collection of over 2.3 million objects that span over
+            5,000 wich is toil and pain these case are perfectly.
+          </p>
+          <div>
+            <p class="space-top-bottom titreh5">
+              <i class="fas fa-file-download fa-2x"></i> Download Story in PDF
+            </p>
+          </div>
+        </div>
+        <div class="warpper-tab">
+          <input class="radio" id="one" name="group" type="radio" checked />
+          <input class="radio" id="two" name="group" type="radio" />
+          <input class="radio" id="three" name="group" type="radio" />
+          <input class="radio" id="four" name="group" type="radio" />
+          <div class="tabs">
+            <label class="tab" id="one-tab" for="one">1970</label>
+            <label class="tab" id="two-tab" for="two">1980</label>
+            <label class="tab" id="three-tab" for="three">1990</label>
+            <label class="tab" id="four-tab" for="four">2000</label>
+          </div>
+          <div class="panels">
+            <div class="panel" id="one-panel">
+              <p class="paragraphetext paragraphetext--gris">
+                The moment of blendid by desire that they cannot foresse the
+                pain and trouble that are bound to ensue and equal blame belongs
+                to those who fail in their duty through weakness shrinking.
+              </p>
+              <div>
+                <p class="space-top-bottom titreh5">READ FULL STORY +</p>
+              </div>
+            </div>
+            <div class="panel" id="two-panel">
+              <p class="paragraphetext paragraphetext--gris">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Corporis aliquid velit culpa esse molestias dolorem, debitis eos
+                perspiciatis delectus! Asperiores!
+              </p>
+              <div><p class="space titreh5">READ FULL STORY +</p></div>
+            </div>
+            <div class="panel" id="three-panel">
+              <div class="paragraphetext paragraphetext--gris">
+                Lorem, ipsum dolor.
+              </div>
+              <p class="paragraphetext paragraphetext--gris">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit neque, a illum corrupti nisi voluptatibus.
+              </p>
+              <div><p class="space titreh5">READ FULL STORY +</p></div>
+            </div>
+            <div class="panel" id="four-panel">
+              <div class="paragraphetext paragraphetext--gris">
+                Lorem, ipsum dolor.
+              </div>
+              <p class="paragraphetext paragraphetext--gris">
+                That are bound to ensue and equal blame belongs to those who
+                fail in their duty adipisicing elit. Reprehenderit neque, a
+                illum corrupti nisi voluptatibus.
+              </p>
+              <div><p class="space titreh5">READ FULL STORY +</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back-color">
+        <div class="titre-about">
+          <div class="history--about history--titre">DEPARTMENTS</div>
+        </div>
+        <div class="titre-about">
+          <div class="titreh1 titreh1--black">Departments of Egypt</div>
+        </div>
+      </div>
+      <div class="back-color2"></div>
+      <div class="video-about">
+        <div class="titre-video-about">
+          <h2 class="titreh2 titreh2--white">
+            Great Art and Great Experiences<br />
+            Since 1969
+          </h2>
+        </div>
+        <div class="img-video-about">
+          <img src="images/play-button.svg" alt="play" />
+        </div>
+      </div>
+      <div class="div-color-child">
+        <div id="conteneur-3column-about">
+          <div class="element-1">
+            <ul>
+              <li class="elem1 paragraphetext paragraphetext--gris line-height">
+                Departement of<br />
+                Sculture Collection
+              </li>
+              <li class="elem1 paragraphetext paragraphetext--gris line-height">
+                Departement of Vases, Metalwork & Minor Arts Collections
+              </li>
+              <li class="elem1 paragraphetext paragraphetext--gris line-height">
+                Departement of Préhistoric, Egyptian, Cypriot and Antiquities.
+              </li>
+            </ul>
+          </div>
+          <div class="element-2">
+            <ul>
+              <li class="elem1 paragraphetext paragraphetext--gris line-height">
+                Departement of Exhibitions, Communication and Education
+              </li>
+              <li class="elem1 paragraphetext paragraphetext--gris line-height">
+                Departement of Technical Support and Museography
+              </li>
+              <li class="elem1 paragraphetext paragraphetext--gris line-height">
+                Departement of Administrative and Financial support
+              </li>
+            </ul>
+          </div>
+          <div class="element-3">
+            <img src="images/carrer-1-1.jpg" alt="jon-opportunite" />
+          </div>
+          <div class="worker">
+            <img src="images/worker.svg" alt="worker" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="titre-about">
+          <div class="history--about history--titre">BEHIND</div>
+        </div>
+        <div class="titre-about">
+          <div class="titreh2 space titreh2--big titreh2--black">
+            Board of Directors
+          </div>
+        </div>
+      </div>
+      <ul class="wrapper-team">
+        <li>
+          <img class="img-team" src="images/team-1-1.jpg" alt="team1" />
+          <h2 class="titreh3">Sherleen Morace</h2>
+          <h6 class="titreh6">Chairman</h6>
+          <hr class="hr-team" />
+          <h5 class="titreh5">
+            <i class="fas fa-share-alt space"></i> Get touch with me
+          </h5>
+        </li>
+        <li>
+          <img class="img-team" src="images/team-1-2.jpg" alt="team2" />
+          <h2 class="titreh3">Beernie Beane</h2>
+          <h6 class="titreh6">Curator</h6>
+          <hr class="hr-team" />
+          <h5 class="titreh5">
+            <i class="fas fa-share-alt space"></i> Get touch with me
+          </h5>
+        </li>
+        <li>
+          <img class="img-team" src="images/team-1-3.jpg" alt="team3" />
+          <h2 class="titreh3">Glinda Nishikawa</h2>
+          <h6 class="titreh6">Administrator</h6>
+          <hr class="hr-team" />
+          <h5 class="titreh5">
+            <i class="fas fa-share-alt space"></i> Get touch with me
+          </h5>
+        </li>
+        <li>
+          <img class="img-team" src="images/team-1-4.jpg" alt="team4" />
+          <h2 class="titreh3">Joshua Mishaw</h2>
+          <h6 class="titreh6">Vp&Consel</h6>
+          <hr class="hr-team" />
+          <h5 class="titreh5">
+            <i class="fas fa-share-alt space"></i> Get touch with me
+          </h5>
+        </li>
+      </ul>
+      <footer>
+        <!-- Rachida -->
+        <div class="footer-wrap">
+          <div>
+            <img src="images/footer-logo-1-1.png" alt="logo" />
+            <form
+              class="form-footer"
+              action="#"
+              method="post"
+              autocomplete="on"
+              name="sign up for beta form"
+            >
+              <div class="input">
+                <input
+                  type="email"
+                  class="button"
+                  id="email"
+                  name="email"
+                  pattern="[^@]+@[^\.]+\..+"
+                  placeholder=" Enter Email Address..."
+                  required
+                />
+                <span class="fontawesome-envelope"
+                  ><i class="far fa-envelope-open fa-lg"></i
+                ></span>
+                <button type="submit" class="button" id="submit">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="social-media-footer">
+          <i class="fab fa-facebook-f link-social"></i>
+          <i class="fab fa-twitter link-social"></i>
+          <i class="fab fa-instagram link-social"></i>
+          <i class="fab fa-youtube link-social"></i>
+        </div>
+        <span class="text-footer"
+          >Copyrights © 2019 <span class="link-orange">Egypt</span>, All Rights
+          Reserved</span
+        >
+      </footer>
+    </main>
+  </body>
+</html>
