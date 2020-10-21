@@ -14,4 +14,4 @@ For this project, we had 5 Days for try to make the best website possible and mo
 
 ---
 
-https://sanamanel.github.io/museum-project/
+https://bastlaf.github.io/museum-project/
